@@ -1,3 +1,1 @@
-/**
- * Created by Admin on 08.12.2017.
- */
+var app = angular.module('SuggestionBox', []);

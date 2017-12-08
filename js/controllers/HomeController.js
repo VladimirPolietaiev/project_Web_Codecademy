@@ -1,3 +1,3 @@
-/**
- * Created by Admin on 08.12.2017.
- */
+app.controller('HomeController', ['$scope', function($scope) {
+    $scope.helloWorld = "Hello, AngularJS!";
+});
