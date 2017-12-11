@@ -22,7 +22,7 @@ app.controller('HomeController', ['$scope','suggestionsService', function($scope
         $scope.posts[index].upvotes += 1;
     };
 
-    $scope.comments = posts.comments;
+//    $scope.comments = posts.comments;
 
 
 }]);

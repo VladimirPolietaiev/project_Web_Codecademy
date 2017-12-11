@@ -12,7 +12,8 @@
         <div class="thumbnail">
             <p class="title">{{ post.title }}</p>
             <p>
-                <span class="glyphicon glyphicon-plus-sign" ng-click="upVote($index)"></span> Upvotes: {{post.upvotes}}
+                <div>{{$index}}</div>
+                <span class="glyphicon glyphicon-plus-sign" ng-click="post.upvotes = post.upvotes + 1"></span> Upvotes: {{post.upvotes}}
             </p>
         </div>
     </div>
