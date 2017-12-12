@@ -18,8 +18,8 @@ app.controller('HomeController', ['$scope','suggestionsService', function($scope
            //after submit, clear input
            $scope.title = '';
            };
-    $scope.upVote = function (index) {
-        $scope.posts[index].upvotes += 1;
+    $scope.upVote = function (post) {
+        post.upvotes += 1;
     };
 
 //    $scope.comments = posts.comments;
