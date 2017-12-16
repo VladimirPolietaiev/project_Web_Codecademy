@@ -1,6 +1,21 @@
 app.controller('SuggestionController', ['$scope', 'suggestionsService', '$routeParams', function($scope, suggestionsService, $routeParams) {
-    post.success(function(suggestionsService) {
-        $scope.post = ideas.posts [$routeParams.id];
-        //test comment
-    });
+
+
+    $scope.post = suggestionsService.posts[$routeParams.id];
+
+    $scope.addComment = function() {
+        console.log(" 222",$scope.post.comments);
+        if(!$scope.comment || $scope.comment === "") {
+            return;
+        }
+
+        $scope.post.comments.push({
+            comments: $scope.comment
+        });
+
+        $scope.comment = '';
+    };
 }]);
+
+
+

@@ -1,28 +1,19 @@
-<div class="container" id="u_0_2z">
-    <div class="form-control col-md-6" style="height:100% ">
-        <h6 class="accessible_elem">Комментарии</h6>
-        <div >
-
-                <div class="col-md-12">
-                    <div class="">
-                        <div class="">
-                            <div >
-                                <input class="_1osa mentionsHidden" name="add_comment_text" tabindex="-1">
-                                <div >
-                                    <div class="_5yk2" tabindex="-1">
-                                        <div class="_5rp7">
-                                            <div class="_1p1t">
-                                                <div class="_1p1v" id="placeholder-blqjq" style="white-space: pre-wrap;">Написать комментарий</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                        <span class="fcg fss UFICommentTip">Нажмите «Enter», чтобы прокомментировать.</span>
-            </div>
+<form ng-submit="addComment()" class="col-md-12" style="margin-top: 50px">
+    <h3> Submit Your Comment </h3>
+    <div class="form-group">
+        <input type="text" class="form-control" placeholder="Great comment here" ng-model="comment" style="width: 50%">
 
     </div>
-</div>
+    <button type="submit" class="btn btn-primary" ng-click="addComment(post)" >Add comment</button>
+
+    <div>
+         111{{post.comments}}111
+
+
+        <p ng-repeat="comments in post.comments">{{post.comments}}</p>
+             <p ng-repeat="(key,val) in comments">{{key}}: {{val}}</p>
+
+
+        </div>
+
+</form>
