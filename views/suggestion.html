@@ -5,15 +5,12 @@
 
     </div>
     <button type="submit" class="btn btn-primary" ng-click="addComment(post)" >Add comment</button>
-
-    <div>
-         111{{post.comments}}111
-
-
-        <p ng-repeat="comments in post.comments">{{post.comments}}</p>
-             <p ng-repeat="(key,val) in comments">{{key}}: {{val}}</p>
-
-
-        </div>
+         <blockquote>
+            <p ng-repeat="comment in post.comments track by $index">
+                {{comment.user}}:{{comment.comments}} <br>
+            </p>
+         </blockquote>
 
 </form>
+
+
