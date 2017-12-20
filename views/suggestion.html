@@ -1,5 +1,7 @@
 <form ng-submit="addComment()" class="col-md-12" style="margin-top: 50px">
-    <h3> Submit Your Comment </h3>
+    <a class="btn btn-info" href="#/views/home.html"><i class="icon-chevron-left">back</i></a>
+
+    <p class="description"> {{ post.title }} </p>
     <div class="form-group">
         <input type="text" class="form-control" placeholder="Great comment here" ng-model="comment" style="width: 50%">
 
