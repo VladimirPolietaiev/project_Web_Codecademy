@@ -1,3 +1,5 @@
+var app = angular.module('SuggestionBox', ['ngRoute']);
+
 app.controller('HomeController', ['$scope','suggestionsService', function($scope, suggestionsService) {
 
     $scope.posts = suggestionsService.posts;
