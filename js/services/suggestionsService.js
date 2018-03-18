@@ -34,4 +34,5 @@ app.factory('suggestionsService', [function(){
         ]
     };
     return suggestionsService;
+
 }]);  
