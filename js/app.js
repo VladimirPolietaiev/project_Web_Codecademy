@@ -1,5 +1,7 @@
 var app = angular.module('SuggestionBox', ['ngRoute']);
 
+console.log("APP",app);
+
 app.config(function ($routeProvider) {
     $routeProvider
         .when('/', {

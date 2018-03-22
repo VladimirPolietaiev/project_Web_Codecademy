@@ -5,7 +5,7 @@ app.controller('HomeController', ['$scope','suggestionsService', function($scope
     $scope.posts = suggestionsService.posts;
 
     $scope.addSuggestion = function() {
-        
+        console.log("post",post);
            //if input empty, don't submit
            if(!$scope.title || $scope.title === "") {
                     return;
