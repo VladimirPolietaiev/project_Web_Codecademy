@@ -2,6 +2,9 @@ var app = angular.module('SuggestionBox', ['ngRoute']);
 
 app.controller('HomeController', ['$scope','suggestionsService', function($scope, suggestionsService) {
 
+    console.log("HomeController!!!");
+    $scope.value = "Hi!"
+
     $scope.posts = suggestionsService.posts;
 
     $scope.addSuggestion = function() {
